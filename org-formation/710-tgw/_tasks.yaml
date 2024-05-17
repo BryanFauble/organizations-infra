@@ -118,6 +118,9 @@ TransitGatewayRoutes:
       # org-sagebase-dpe-prod
       orca-vpc:
         CIDR: "10.255.24.0/24"
+      # org-sagebase-dpe-prod
+      dpe-k8s-vpc:
+        CIDR: "10.51.0.0/16"
 
   Parameters:
     VpcSubnetIDs:
@@ -142,6 +145,7 @@ Mappings:
       '237179673806': 'internalpoolvpc'      # org-sagebase-scipooldev
       '797640923903': 'defaultvpc' # org-sagebase-sageit
       '766808016710': 'orca-vpc' # org-sagebase-dpe-prod
+      '766808016710': 'dpe-k8s-vpc' # org-sagebase-dpe-prod
   TgwSpokesB:
     VpcName:
       '055273631518': 'snowflakevpc'   # org-sagebase-scicomp
